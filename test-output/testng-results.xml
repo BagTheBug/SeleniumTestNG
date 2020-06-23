@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[STEP1]]>
+    </line>
+    <line>
+      <![CDATA[STEP2]]>
+    </line>
+    <line>
+      <![CDATA[STEP3]]>
+    </line>
+    <line>
+      <![CDATA[STEP4]]>
+    </line>
+    <line>
+      <![CDATA[STEP5]]>
+    </line>
+    <line>
+      <![CDATA[STEP6]]>
+    </line>
+    <line>
+      <![CDATA[STEP7]]>
+    </line>
+    <line>
+      <![CDATA[STEP8]]>
+    </line>
+    <line>
+      <![CDATA[STEP9]]>
+    </line>
+    <line>
+      <![CDATA[STEP10]]>
+    </line>
+    <line>
+      <![CDATA[STEP11]]>
+    </line>
+    <line>
+      <![CDATA[STEP12]]>
+    </line>
+    <line>
+      <![CDATA[STEP13]]>
+    </line>
+    <line>
+      <![CDATA[STEP14]]>
+    </line>
+    <line>
+      <![CDATA[STEP15]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24896" started-at="2020-06-23T11:32:55 IST" finished-at="2020-06-23T11:33:20 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="24896" started-at="2020-06-23T11:32:55 IST" finished-at="2020-06-23T11:33:20 IST">
+      <class name="com.retail.testsuite.Retail_TestCase">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.retail.testsuite.Retail_TestCase@9dc69448]" name="launch" is-config="true" duration-ms="7682" started-at="2020-06-23T11:32:55 IST" finished-at="2020-06-23T11:33:03 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.retail.testsuite.Retail_TestCase@9dc69448]" name="loadUrl" is-config="true" duration-ms="5204" started-at="2020-06-23T11:33:03 IST" finished-at="2020-06-23T11:33:08 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP2]]>
+            </line>
+            <line>
+              <![CDATA[STEP3]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loadUrl -->
+        <test-method status="PASS" signature="addMultipleCategories([Ljava.lang.String;)[pri:1, instance:com.retail.testsuite.Retail_TestCase@9dc69448]" name="addMultipleCategories" duration-ms="11167" started-at="2020-06-23T11:33:08 IST" data-provider="adminLogin" finished-at="2020-06-23T11:33:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@9be7105]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[STEP4]]>
+            </line>
+            <line>
+              <![CDATA[STEP5]]>
+            </line>
+            <line>
+              <![CDATA[STEP6]]>
+            </line>
+            <line>
+              <![CDATA[STEP7]]>
+            </line>
+            <line>
+              <![CDATA[STEP8]]>
+            </line>
+            <line>
+              <![CDATA[STEP9]]>
+            </line>
+            <line>
+              <![CDATA[STEP10]]>
+            </line>
+            <line>
+              <![CDATA[STEP11]]>
+            </line>
+            <line>
+              <![CDATA[STEP12]]>
+            </line>
+            <line>
+              <![CDATA[STEP13]]>
+            </line>
+            <line>
+              <![CDATA[STEP14]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addMultipleCategories -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.retail.testsuite.Retail_TestCase@9dc69448]" name="close" is-config="true" duration-ms="800" started-at="2020-06-23T11:33:20 IST" finished-at="2020-06-23T11:33:20 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP15]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.retail.testsuite.Retail_TestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
