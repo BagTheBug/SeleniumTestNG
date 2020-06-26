@@ -2,14 +2,12 @@ package dataProvider;
 
 import org.testng.annotations.DataProvider;
 
-import com.retail.utils.ExcelUtils;
-
 public class LoginData {
 
 	@DataProvider
-	public Object[][] adminLogin() {
+	public Object[][] addCategory() {
 		System.out.println("Getting Data");
-		return new Object[][] { { "admin", "admin@123" } };
+		return new Object[][] { { "admin", "admin@123", "RetailData", "TestCase1" } };
 
 	}
 
@@ -17,6 +15,6 @@ public class LoginData {
 	public Object[][] addProduct() {
 		System.out.println("Getting Data");
 		return new Object[][] { { "admin", "admin@123" } };
-
 	}
+
 }

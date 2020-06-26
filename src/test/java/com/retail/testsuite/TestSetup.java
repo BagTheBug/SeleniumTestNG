@@ -16,21 +16,21 @@ public class TestSetup {
 	{
 		System.setProperty("atu.reporter.config", "src/test/resources/atu.properties");
 	}
-	WebDriverUtils wdu = new WebDriverUtils();
+	WebDriverUtils utils = new WebDriverUtils();
 
 	@BeforeClass
 	public void launch() {
-		wdu.initialize();
+		utils.initialize();
 	}
 
 	@BeforeMethod
 	public void loadUrl() {
-		wdu.launchUrl();
+		utils.launchUrl();
 	}
 
 	@AfterClass
 	public void close() {
-		wdu.exit();
+		utils.exit();
 	}
 
 }

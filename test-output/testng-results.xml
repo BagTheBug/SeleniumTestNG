@@ -46,20 +46,35 @@
     <line>
       <![CDATA[STEP15]]>
     </line>
+    <line>
+      <![CDATA[STEP16]]>
+    </line>
+    <line>
+      <![CDATA[STEP17]]>
+    </line>
+    <line>
+      <![CDATA[STEP18]]>
+    </line>
+    <line>
+      <![CDATA[STEP19]]>
+    </line>
+    <line>
+      <![CDATA[STEP20]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="24896" started-at="2020-06-23T11:32:55 IST" finished-at="2020-06-23T11:33:20 IST">
+  <suite name="Default suite" duration-ms="41638" started-at="2020-06-26T22:04:19 IST" finished-at="2020-06-26T22:05:01 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="24896" started-at="2020-06-23T11:32:55 IST" finished-at="2020-06-23T11:33:20 IST">
+    <test name="Default test" duration-ms="41638" started-at="2020-06-26T22:04:19 IST" finished-at="2020-06-26T22:05:01 IST">
       <class name="com.retail.testsuite.Retail_TestCase">
-        <test-method status="PASS" signature="launch()[pri:0, instance:com.retail.testsuite.Retail_TestCase@9dc69448]" name="launch" is-config="true" duration-ms="7682" started-at="2020-06-23T11:32:55 IST" finished-at="2020-06-23T11:33:03 IST">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.retail.testsuite.Retail_TestCase@c0c23b81]" name="launch" is-config="true" duration-ms="6786" started-at="2020-06-26T22:04:19 IST" finished-at="2020-06-26T22:04:26 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP1]]>
             </line>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.retail.testsuite.Retail_TestCase@9dc69448]" name="loadUrl" is-config="true" duration-ms="5204" started-at="2020-06-23T11:33:03 IST" finished-at="2020-06-23T11:33:08 IST">
+        <test-method status="PASS" signature="loadUrl()[pri:0, instance:com.retail.testsuite.Retail_TestCase@c0c23b81]" name="loadUrl" is-config="true" duration-ms="4572" started-at="2020-06-26T22:04:26 IST" finished-at="2020-06-26T22:04:31 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP2]]>
@@ -69,11 +84,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- loadUrl -->
-        <test-method status="PASS" signature="addMultipleCategories([Ljava.lang.String;)[pri:1, instance:com.retail.testsuite.Retail_TestCase@9dc69448]" name="addMultipleCategories" duration-ms="11167" started-at="2020-06-23T11:33:08 IST" data-provider="adminLogin" finished-at="2020-06-23T11:33:20 IST">
+        <test-method status="PASS" signature="verifyProductAdded([Ljava.lang.String;)[pri:1, instance:com.retail.testsuite.Retail_TestCase@c0c23b81]" name="verifyProductAdded" duration-ms="29140" started-at="2020-06-26T22:04:31 IST" data-provider="addProduct" finished-at="2020-06-26T22:05:00 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@9be7105]]>
+                <![CDATA[[Ljava.lang.String;@84977f2a]]>
               </value>
             </param>
           </params>
@@ -111,16 +126,31 @@
             <line>
               <![CDATA[STEP14]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- addMultipleCategories -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.retail.testsuite.Retail_TestCase@9dc69448]" name="close" is-config="true" duration-ms="800" started-at="2020-06-23T11:33:20 IST" finished-at="2020-06-23T11:33:20 IST">
-          <reporter-output>
             <line>
               <![CDATA[STEP15]]>
+            </line>
+            <line>
+              <![CDATA[STEP16]]>
+            </line>
+            <line>
+              <![CDATA[STEP17]]>
+            </line>
+            <line>
+              <![CDATA[STEP18]]>
+            </line>
+            <line>
+              <![CDATA[STEP19]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProductAdded -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.retail.testsuite.Retail_TestCase@c0c23b81]" name="close" is-config="true" duration-ms="1063" started-at="2020-06-26T22:05:00 IST" finished-at="2020-06-26T22:05:01 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP20]]>
             </line>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.retail.testsuite.Retail_TestCase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

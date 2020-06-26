@@ -38,7 +38,6 @@ public class WebDriverUtils {
 		String b = null;
 		PropertyUtils pu = new PropertyUtils();
 		p = pu.loadProperty("Project.properties");
-//			Properties db = pu.loadProperty("Db.properties");
 		String browser = p.getProperty("browser");
 		try {
 			switch (browser) {
@@ -258,9 +257,39 @@ public class WebDriverUtils {
 		String msg = driver.findElement(loc).getText();
 		System.out.println(msg);
 		if (msg.trim().contains(val.trim())) {
-			ATUReports.add("Expected String Matched", LogAs.PASSED, new CaptureScreen(ScreenshotOf.DESKTOP));
+			ATUReports.add("Success Message Validated", LogAs.PASSED, new CaptureScreen(ScreenshotOf.DESKTOP));
 		} else {
-			ATUReports.add("Expected String Doesn't Match", LogAs.FAILED, new CaptureScreen(ScreenshotOf.DESKTOP));
+			ATUReports.add("Success Message Validation is Failed", LogAs.FAILED,
+					new CaptureScreen(ScreenshotOf.DESKTOP));
 		}
+	}
+
+	public String getText(By loc) {
+		String text = null;
+		text = driver.findElement(loc).getText();
+		if (text == null) {
+			ATUReports.add("Expected String Matched", LogAs.FAILED, new CaptureScreen(ScreenshotOf.DESKTOP));
+		}
+		return text;
+	}
+
+	public boolean verifyElementPresent(By loc) {
+		boolean result = driver.findElement(loc).isDisplayed();
+		if (!result) {
+			ATUReports.add("Expected Element Not Present", LogAs.FAILED, new CaptureScreen(ScreenshotOf.DESKTOP));
+		}
+		return result;
+	}
+
+	public String getSlidngElementText(By loc) {
+		WebElement ele = driver.findElement(loc);
+		Actions act = new Actions(driver);
+		act.clickAndHold(ele);
+		String s = ele.getText();
+		act.doubleClick(ele);
+		if (s == null) {
+			ATUReports.add("Unable to Get Text of Sliding Element", LogAs.FAILED, new CaptureScreen(ScreenshotOf.DESKTOP));
+		}
+		return s;
 	}
 }

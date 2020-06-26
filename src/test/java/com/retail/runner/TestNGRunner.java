@@ -19,9 +19,9 @@ public class TestNGRunner {
 		XmlTest test = new XmlTest(suite);
 		test.setName("Test");
 		List<XmlClass> classes = new ArrayList<XmlClass>();
-		XmlClass c = new XmlClass("com.clearcode.testsuite.TestSuite1");
+		XmlClass c = new XmlClass("com.retail.testsuite.Retail_TestCase");
 		List<XmlInclude> methods = new ArrayList<XmlInclude>();
-		methods.add(new XmlInclude("createPatient"));
+		methods.add(new XmlInclude("addMultipleCategories"));
 		c.setIncludedMethods(methods);
 		classes.add(c);
 		test.setXmlClasses(classes) ;
